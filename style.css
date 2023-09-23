@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+#contenedor {
+    border-radius: 250px;
+    box-shadow: #aaa 10px 10px 10px;
+    color: white;
+    margin: 0 auto;
+    width: 60%;
+    height: 300px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn_comprobar {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#txt_numero {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#out_mensajes {
+    color: chartreuse;
+} 
+
+.animar_ganador {
+    font-size: 16px; /* Tamaño inicial del mensaje */
+    display: inline-block;
+    animation: agrandar 2s ease-in-out forwards;
+}
+
+
+@keyframes agrandar {
+    0% {
+        transform: scale(1); /* Tamaño original */
+    }
+    100% {
+        transform: scale(10); /* Tamaño triple */
+    }
+}
+
+.negrear_fondo {
+    color:#000;
+}

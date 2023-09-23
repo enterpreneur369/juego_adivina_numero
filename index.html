@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="@nosoy_hacker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+   <div id="contenedor">
+    <h1>Adivina el número</h1>
+    <p>Introduce un número entre 1 y 100</p>
+    <form id="formulario">
+        <input type="text" id="txt_numero" required name="numero">
+        <input type="button" id="btn_comprobar" value="Comprobar">
+    </form>
+    <p>Intentos restantes: <output id="out_intentos_restantes">7</output></p>
+    <output id="out_mensajes">¡inténtalo!</output>
+    <p>Historial de intentos:</p>
+    <ul id="ul_intentos_anteriores"></ul>
+    <audio id="sonido_actual"></audio>
+   </div> 
+</body>
+</html>
